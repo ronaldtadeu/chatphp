@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>My First Heading</h1>
+        <p>My first paragraph.</p>
+        <script>
+            var exampleSocket = new WebSocket("ws://localhost:8000");
+                exampleSocket.onopen = function (event) {
+                    exampleSocket.send("123123213");
+                };
+        </script>
+    </body>
+</html>
